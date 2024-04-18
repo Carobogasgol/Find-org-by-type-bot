@@ -1,14 +1,13 @@
 # тут FSM для получения локации
-from aiogram import types, Router, F, Bot
-from aiogram.filters import Command, or_f, StateFilter
+from aiogram import types, Router, F
+from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
-from aiogram.types import URLInputFile, ReplyKeyboardRemove, InputMediaPhoto, InputFile, FSInputFile
+from aiogram.types import ReplyKeyboardRemove, InputMediaPhoto, FSInputFile
 
-# from handlers.Telegram_bot_lern import bot
 # для загрузки фото ссылки
 from keyboards import reply
 from aiogram.fsm.state import State, StatesGroup
-from keyboards.reply import get_keyboard
+
 from handlers.user_privats import bot
 
 from handlers.geo import get_business_info

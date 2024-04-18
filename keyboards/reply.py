@@ -1,4 +1,4 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
 
@@ -32,24 +32,3 @@ location_kb = ReplyKeyboardMarkup(
     input_field_placeholder='Сделай это!'
 )
 
-
-# # это то, что было до улучшения
-# start_kb = ReplyKeyboardMarkup(
-#     keyboard=[
-#         [
-#             KeyboardButton(text="Меню"),
-#             KeyboardButton(text="Старт"),
-#         ],
-#         [
-#             KeyboardButton(text="Локация", request_location=True),
-#             KeyboardButton(text="чмо"),
-#             KeyboardButton(text="Отправить номер", request_contact=True)
-#         ],
-#     ],
-#     resize_keyboard=True,
-#     input_field_placeholder='Чё тебе надо, путник?'
-#     # это, чтобы изменить текст в строке текста
-# )
-
-
-# start_kb3.row(KeyboardButton(text='example'))  # добавить просто кнопку новым рядом

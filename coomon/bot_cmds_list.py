@@ -1,5 +1,5 @@
 # здесь прописываю команды бота, которые видны в кнопке "меню"
-from aiogram.types import BotCommand, reaction_type
+from aiogram.types import BotCommand
 
 
 private = [
